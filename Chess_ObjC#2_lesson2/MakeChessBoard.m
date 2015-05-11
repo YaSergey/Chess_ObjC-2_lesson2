@@ -13,6 +13,10 @@
 
 + (void) makeChessBoard: (UIView *) chessView {
 
+    UIImage * imageWhiteSquere = [UIImage imageNamed:@"whiteSquere.jpg"];
+    UIImage * imageBlackSquere = [UIImage imageNamed:@"blackSquere.jpg"];
+
+    
     NSInteger widthSquare = (CONST_BoardSize / CONST_NumberOfLine)*0.9;
     NSInteger numberOfLineBlack = 0, numberOfLineWhite = 0;
     NSInteger x = 0, x1 = 0, y = 0, y1= 0;
@@ -35,9 +39,14 @@
                 y = widthSquare * j;
                 x = widthSquare * numberOfLineBlack;
             }
-            UIImageView * boardBlackView = [[UIImageView alloc] initWithFrame:CGRectMake(x+3, y+3, widthSquare, widthSquare)];
-            boardBlackView.backgroundColor = [UIColor blackColor];
-            [chessView addSubview: boardBlackView];
+UIView * boardBlackView = [[UIView alloc] initWithFrame:CGRectMake(x+3, y+3, widthSquare, widthSquare)];
+UIImageView * imageView = [[UIImageView alloc]initWithFrame:boardBlackView.bounds];
+
+    imageView.image = imageBlackSquere;
+            [boardBlackView addSubview:imageView];
+//    boardBlackView.backgroundColor = [UIColor blackColor];
+    [chessView addSubview: boardBlackView];
+    
             
         }
 
@@ -81,9 +90,14 @@
                     y1 = widthSquare * j1 + widthSquare;
                     x1 = widthSquare * numberOfLineWhite;
                 }
-                UIImageView * boardWhiteView = [[UIImageView alloc] initWithFrame:CGRectMake(x1+3, y1+3, widthSquare, widthSquare)];
-                boardWhiteView.backgroundColor = [UIColor yellowColor];
-                [chessView addSubview: boardWhiteView];
+UIImageView * boardWhiteView = [[UIImageView alloc] initWithFrame:CGRectMake(x1+3, y1+3, widthSquare, widthSquare)];
+
+UIImageView * imageView = [[UIImageView alloc]initWithFrame:boardWhiteView.bounds];
+                
+imageView.image = imageWhiteSquere;
+//boardWhiteView.backgroundColor = [UIColor yellowColor];
+                [boardWhiteView addSubview:imageView];
+[chessView addSubview: boardWhiteView];
             }
             
             numberOfLineWhite ++;

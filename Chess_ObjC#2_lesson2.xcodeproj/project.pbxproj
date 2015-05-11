@@ -14,6 +14,14 @@
 		7C1FFAC71B001A47008E9B01 /* blackPawn.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7C1FFABC1B001A47008E9B01 /* blackPawn.jpg */; };
 		7C1FFAC81B001A47008E9B01 /* blackQueen.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7C1FFABD1B001A47008E9B01 /* blackQueen.jpg */; };
 		7C1FFAC91B001A47008E9B01 /* blackRook.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7C1FFABE1B001A47008E9B01 /* blackRook.jpg */; };
+		7C1FFAD11B00E109008E9B01 /* whiteBishop.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7C1FFACB1B00E109008E9B01 /* whiteBishop.jpg */; };
+		7C1FFAD21B00E109008E9B01 /* whiteKing.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7C1FFACC1B00E109008E9B01 /* whiteKing.jpg */; };
+		7C1FFAD31B00E109008E9B01 /* whiteKnight.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7C1FFACD1B00E109008E9B01 /* whiteKnight.jpg */; };
+		7C1FFAD41B00E109008E9B01 /* whitePawn.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7C1FFACE1B00E109008E9B01 /* whitePawn.jpg */; };
+		7C1FFAD51B00E109008E9B01 /* whiteQueen.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7C1FFACF1B00E109008E9B01 /* whiteQueen.jpg */; };
+		7C1FFAD61B00E109008E9B01 /* whiteRook.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7C1FFAD01B00E109008E9B01 /* whiteRook.jpg */; };
+		7C1FFADD1B00ECA0008E9B01 /* blackSquere.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7C1FFADB1B00ECA0008E9B01 /* blackSquere.jpg */; };
+		7C1FFADE1B00ECA0008E9B01 /* whiteSquere.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7C1FFADC1B00ECA0008E9B01 /* whiteSquere.jpg */; };
 		7CDC6DB51AFFEE51002FA4AF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CDC6DB41AFFEE51002FA4AF /* main.m */; };
 		7CDC6DB81AFFEE51002FA4AF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CDC6DB71AFFEE51002FA4AF /* AppDelegate.m */; };
 		7CDC6DBB1AFFEE52002FA4AF /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CDC6DBA1AFFEE52002FA4AF /* ViewController.m */; };
@@ -43,6 +51,14 @@
 		7C1FFABC1B001A47008E9B01 /* blackPawn.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = blackPawn.jpg; sourceTree = "<group>"; };
 		7C1FFABD1B001A47008E9B01 /* blackQueen.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = blackQueen.jpg; sourceTree = "<group>"; };
 		7C1FFABE1B001A47008E9B01 /* blackRook.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = blackRook.jpg; sourceTree = "<group>"; };
+		7C1FFACB1B00E109008E9B01 /* whiteBishop.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = whiteBishop.jpg; sourceTree = "<group>"; };
+		7C1FFACC1B00E109008E9B01 /* whiteKing.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = whiteKing.jpg; sourceTree = "<group>"; };
+		7C1FFACD1B00E109008E9B01 /* whiteKnight.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = whiteKnight.jpg; sourceTree = "<group>"; };
+		7C1FFACE1B00E109008E9B01 /* whitePawn.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = whitePawn.jpg; sourceTree = "<group>"; };
+		7C1FFACF1B00E109008E9B01 /* whiteQueen.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = whiteQueen.jpg; sourceTree = "<group>"; };
+		7C1FFAD01B00E109008E9B01 /* whiteRook.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = whiteRook.jpg; sourceTree = "<group>"; };
+		7C1FFADB1B00ECA0008E9B01 /* blackSquere.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = blackSquere.jpg; sourceTree = "<group>"; };
+		7C1FFADC1B00ECA0008E9B01 /* whiteSquere.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = whiteSquere.jpg; sourceTree = "<group>"; };
 		7CDC6DAF1AFFEE51002FA4AF /* Chess_ObjC#2_lesson2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Chess_ObjC#2_lesson2.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7CDC6DB31AFFEE51002FA4AF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7CDC6DB41AFFEE51002FA4AF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -82,6 +98,14 @@
 		7C1FFAB41B001A47008E9B01 /* figuries */ = {
 			isa = PBXGroup;
 			children = (
+				7C1FFADB1B00ECA0008E9B01 /* blackSquere.jpg */,
+				7C1FFADC1B00ECA0008E9B01 /* whiteSquere.jpg */,
+				7C1FFACB1B00E109008E9B01 /* whiteBishop.jpg */,
+				7C1FFACC1B00E109008E9B01 /* whiteKing.jpg */,
+				7C1FFACD1B00E109008E9B01 /* whiteKnight.jpg */,
+				7C1FFACE1B00E109008E9B01 /* whitePawn.jpg */,
+				7C1FFACF1B00E109008E9B01 /* whiteQueen.jpg */,
+				7C1FFAD01B00E109008E9B01 /* whiteRook.jpg */,
 				7C1FFAB61B001A47008E9B01 /* blackBishop.jpg */,
 				7C1FFABA1B001A47008E9B01 /* blackKing.jpg */,
 				7C1FFABB1B001A47008E9B01 /* blackKnight.jpg */,
@@ -237,14 +261,22 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7C1FFADD1B00ECA0008E9B01 /* blackSquere.jpg in Resources */,
+				7C1FFAD31B00E109008E9B01 /* whiteKnight.jpg in Resources */,
 				7CDC6DBE1AFFEE52002FA4AF /* Main.storyboard in Resources */,
 				7C1FFAC61B001A47008E9B01 /* blackKnight.jpg in Resources */,
 				7C1FFAC51B001A47008E9B01 /* blackKing.jpg in Resources */,
 				7C1FFAC91B001A47008E9B01 /* blackRook.jpg in Resources */,
 				7C1FFAC11B001A47008E9B01 /* blackBishop.jpg in Resources */,
+				7C1FFAD41B00E109008E9B01 /* whitePawn.jpg in Resources */,
+				7C1FFAD21B00E109008E9B01 /* whiteKing.jpg in Resources */,
+				7C1FFADE1B00ECA0008E9B01 /* whiteSquere.jpg in Resources */,
 				7C1FFAC81B001A47008E9B01 /* blackQueen.jpg in Resources */,
 				7CDC6DC31AFFEE52002FA4AF /* LaunchScreen.xib in Resources */,
+				7C1FFAD51B00E109008E9B01 /* whiteQueen.jpg in Resources */,
 				7C1FFAC71B001A47008E9B01 /* blackPawn.jpg in Resources */,
+				7C1FFAD11B00E109008E9B01 /* whiteBishop.jpg in Resources */,
+				7C1FFAD61B00E109008E9B01 /* whiteRook.jpg in Resources */,
 				7CDC6DC01AFFEE52002FA4AF /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -14,21 +14,21 @@
 
     NSInteger widthSquare = (CONST_BoardSize / CONST_NumberOfLine);
 
-// массив расставления  черных пешек=======================
+// массив расставления  белых пешек=======================
     
-    NSMutableArray * blackPawnArr = [[NSMutableArray alloc] init];
-    UIImage * blackPawn = [UIImage imageNamed: [NSString stringWithFormat:@"blackPawn.jpg"]];
+    NSMutableArray * whitePawnArr = [[NSMutableArray alloc] init];
+    UIImage * whitePawn = [UIImage imageNamed: [NSString stringWithFormat:@"whitePawn.jpg"]];
     
     
     for (int i = 0; i <8 ; i++) {
-        [blackPawnArr addObject:blackPawn];
+        [whitePawnArr addObject:whitePawn];
     
 
         UIView * figureView =
             [[UIView alloc] initWithFrame:CGRectMake(1.9*CONST_counturSize+widthSquare*i*0.905, 1.7*CONST_counturSize+widthSquare, widthSquare*0.7, widthSquare*0.7)];
         UIImageView * imageView = [[UIImageView alloc] initWithFrame:figureView.bounds];
             
-        imageView.image = [blackPawnArr objectAtIndex:i];
+        imageView.image = [whitePawnArr objectAtIndex:i];
         
         [figureView addSubview:imageView];
         [figView addSubview:figureView];
@@ -37,19 +37,19 @@
     
 
 
-// массив расставления белых пешек =======================
+// массив расставления черных пешек =======================
 
-    NSMutableArray * whitePawnArr = [[NSMutableArray alloc] init];
-    UIImage * whitePawn = [UIImage imageNamed: [NSString stringWithFormat:@"blackPawn.jpg"]];
+    NSMutableArray * blackPawnArr = [[NSMutableArray alloc] init];
+    UIImage * blackPawn = [UIImage imageNamed: [NSString stringWithFormat:@"blackPawn.jpg"]];
 
     for (int i = 0; i <8 ; i++) {
-        [whitePawnArr addObject:whitePawn];
+        [blackPawnArr addObject:blackPawn];
 
     UIView * figureView =
     [[UIView alloc] initWithFrame:CGRectMake(1.9*CONST_counturSize+widthSquare*i*0.905, 1.9*CONST_counturSize+widthSquare*5.4, widthSquare*0.7, widthSquare*0.7)];
     UIImageView * imageView = [[UIImageView alloc] initWithFrame:figureView.bounds];
     
-    imageView.image = [whitePawnArr objectAtIndex:i];
+    imageView.image = [blackPawnArr objectAtIndex:i];
     
     [figureView addSubview:imageView];
     [figView addSubview:figureView];
@@ -60,11 +60,11 @@
     
     NSMutableArray * whiteFiguriesArray = [[NSMutableArray alloc] init];
     
-    UIImage * whiteRook = [UIImage imageNamed: [NSString stringWithFormat:@"blackRook.jpg"]];
-    UIImage * whiteKnight = [UIImage imageNamed: [NSString stringWithFormat:@"blackKnight.jpg"]];
-    UIImage * whiteBishop = [UIImage imageNamed: [NSString stringWithFormat:@"blackBishop.jpg"]];
-    UIImage * whiteQueen = [UIImage imageNamed: [NSString stringWithFormat:@"blackQueen.jpg"]];
-    UIImage * whiteKing = [UIImage imageNamed: [NSString stringWithFormat:@"blackKing.jpg"]];
+    UIImage * whiteRook = [UIImage imageNamed: [NSString stringWithFormat:@"whiteRook.jpg"]];
+    UIImage * whiteKnight = [UIImage imageNamed: [NSString stringWithFormat:@"whiteKnight.jpg"]];
+    UIImage * whiteBishop = [UIImage imageNamed: [NSString stringWithFormat:@"whiteBishop.jpg"]];
+    UIImage * whiteQueen = [UIImage imageNamed: [NSString stringWithFormat:@"whiteQueen.jpg"]];
+    UIImage * whiteKing = [UIImage imageNamed: [NSString stringWithFormat:@"whiteKing.jpg"]];
 
 
     [whiteFiguriesArray addObject:whiteRook];

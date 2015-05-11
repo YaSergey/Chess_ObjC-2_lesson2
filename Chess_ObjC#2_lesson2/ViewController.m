@@ -36,21 +36,22 @@
     [super viewDidLoad];
     
     
-    // контуры шахматной доски, размеры определены константами
+// контуры шахматной доски, размеры определены константами ==================
+    
     UIView * boardContur = [[UIView alloc] initWithFrame:CGRectMake(CONST_counturSize, CONST_counturSize, CONST_BoardSize, CONST_BoardSize)];
     boardContur.backgroundColor = [UIColor darkGrayColor];
     self.imageView = boardContur;
     [self.view addSubview:boardContur];
     boardContur.userInteractionEnabled = NO;
     
-//     белое поле шахматной доски - привязано пропорционально к контурам доски
+// поле шахматной доски - привязано пропорционально к контурам доски
     
     UIView * boardWhiteView =[[UIView alloc] initWithFrame:
     CGRectMake(boardContur.frame.size.width/2 - boardContur.frame.size.width/2.65,
                boardContur.frame.size.height/2 - boardContur.frame.size.height/2.65,
                boardContur.frame.size.width*0.9, boardContur.frame.size.height*0.9)];
     
-    boardWhiteView.backgroundColor = [[UIColor yellowColor]colorWithAlphaComponent:0.9];
+    boardWhiteView.backgroundColor = [[UIColor yellowColor]colorWithAlphaComponent:0.0];
     boardWhiteView.userInteractionEnabled = NO;
 
     
