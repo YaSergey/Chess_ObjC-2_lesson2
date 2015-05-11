@@ -40,10 +40,10 @@
                 x = widthSquare * numberOfLineBlack;
             }
 UIView * boardBlackView = [[UIView alloc] initWithFrame:CGRectMake(x+3, y+3, widthSquare, widthSquare)];
-UIImageView * imageView = [[UIImageView alloc]initWithFrame:boardBlackView.bounds];
+UIImageView * imageView = [[UIImageView alloc]initWithFrame:boardBlackView.bounds]; // добавление фона как изборажения
 
     imageView.image = imageBlackSquere;
-            [boardBlackView addSubview:imageView];
+    [boardBlackView addSubview:imageView];
 //    boardBlackView.backgroundColor = [UIColor blackColor];
     [chessView addSubview: boardBlackView];
     

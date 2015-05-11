@@ -34,12 +34,23 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
+   
+    //  определенение переменной для  фона, как картинка
+
+    UIImage * imageBlackSquere = [UIImage imageNamed:@"blackSquere.jpg"];
+    UIImage * imageWhiteSquere = [UIImage imageNamed:@"whiteSquere.jpg"];
+
     
 // контуры шахматной доски, размеры определены константами ==================
     
     UIView * boardContur = [[UIView alloc] initWithFrame:CGRectMake(CONST_counturSize, CONST_counturSize, CONST_BoardSize, CONST_BoardSize)];
-    boardContur.backgroundColor = [UIColor darkGrayColor];
+    UIImageView * imageViewWood = [[UIImageView alloc] initWithFrame:boardContur.bounds];
+    
+    imageViewWood.image = imageBlackSquere;
+    [boardContur addSubview:imageViewWood];
+
+//    boardContur.backgroundColor = [UIColor darkGrayColor];
+    
     self.imageView = boardContur;
     [self.view addSubview:boardContur];
     boardContur.userInteractionEnabled = NO;
@@ -51,8 +62,13 @@
                boardContur.frame.size.height/2 - boardContur.frame.size.height/2.65,
                boardContur.frame.size.width*0.9, boardContur.frame.size.height*0.9)];
     
+    UIImageView * imageViewWoodWhite = [[UIImageView alloc] initWithFrame:boardWhiteView.bounds];
+    
+    imageViewWoodWhite.image = imageWhiteSquere;
+    [boardWhiteView addSubview:imageViewWoodWhite];
+
     boardWhiteView.backgroundColor = [[UIColor yellowColor]colorWithAlphaComponent:0.0];
-    boardWhiteView.userInteractionEnabled = NO;
+    boardWhiteView.userInteractionEnabled = NO; // отключение методов по движению view
 
     
     self.imageView = boardWhiteView;
