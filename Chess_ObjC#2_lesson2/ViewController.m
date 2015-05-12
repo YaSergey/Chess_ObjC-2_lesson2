@@ -35,49 +35,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
    
-    //  определенение переменной для  фона, как картинка
 
-    UIImage * imageBlackSquere = [UIImage imageNamed:@"blackSquere.jpg"];
-    UIImage * imageWhiteSquere = [UIImage imageNamed:@"whiteSquere.jpg"];
-
-    
-// контуры шахматной доски, размеры определены константами ==================
-    
-    UIView * boardContur = [[UIView alloc] initWithFrame:CGRectMake(CONST_counturSize, CONST_counturSize, CONST_BoardSize, CONST_BoardSize)];
-    UIImageView * imageViewWood = [[UIImageView alloc] initWithFrame:boardContur.bounds];
-    
-    imageViewWood.image = imageBlackSquere;
-    [boardContur addSubview:imageViewWood];
-
-//    boardContur.backgroundColor = [UIColor darkGrayColor];
-    
-    self.imageView = boardContur;
-    [self.view addSubview:boardContur];
-    boardContur.userInteractionEnabled = NO;
-    
-// поле шахматной доски - привязано пропорционально к контурам доски
-    
-    UIView * boardWhiteView =[[UIView alloc] initWithFrame:
-    CGRectMake(boardContur.frame.size.width/2 - boardContur.frame.size.width/2.65,
-               boardContur.frame.size.height/2 - boardContur.frame.size.height/2.65,
-               boardContur.frame.size.width*0.9, boardContur.frame.size.height*0.9)];
-    
-    UIImageView * imageViewWoodWhite = [[UIImageView alloc] initWithFrame:boardWhiteView.bounds];
-    
-    imageViewWoodWhite.image = imageWhiteSquere;
-    [boardWhiteView addSubview:imageViewWoodWhite];
-
-    boardWhiteView.backgroundColor = [[UIColor yellowColor]colorWithAlphaComponent:0.0];
-    boardWhiteView.userInteractionEnabled = NO; // отключение методов по движению view
-
-    
-    self.imageView = boardWhiteView;
-    [boardContur addSubview:boardWhiteView];
-    
-    self.widthSquare1 = (boardWhiteView.bounds.size.height/8);
-
-    [MakeChessBoard makeChessBoard:boardWhiteView];
-    [self.view addSubview:boardWhiteView];
+    [MakeChessBoard makeChessBoard:self.view];
     
     [AddFiguriesToBoard addFiguriesToBoard:self.view];
     
